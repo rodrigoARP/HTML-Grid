@@ -1,0 +1,62 @@
+body {
+    background-color: #ffe0b3; /* Fondo similar al de la imagen */
+    padding: 20px;
+}
+
+div{
+    background-color: rgb(216, 255, 255);
+    border-radius: 20px;
+}
+
+.chat {
+    display: grid;
+    padding: 5px;
+    max-width: 600px;
+    row-gap: 10px;
+    margin: 200px auto;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.message.received {
+    justify-self: start;
+    background-color: #e0ffe0;
+}
+
+.message.sent {
+    justify-self: end;
+    background-color: #c3edfb;
+}
+
+.message p {
+    margin: 10px 0px 20px 5px /* Margen: arriba, derecha, abajo, izquierda */
+}
+
+.message .avatar {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.message .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Hace la imagen circular */
+}
+
+.time {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: rgb(177, 177, 177);
+    justify-self: end;
+    align-self: end;
+}
