@@ -1,17 +1,17 @@
 body {
-    background-color: #ffe0b3; /* Fondo similar al de la imagen */
+    background-color: #fff1db; /* Fondo similar al de la imagen */
     padding: 20px;
 }
 
 div{
-    background-color: rgb(216, 255, 255);
+    background-color: rgb(227, 255, 255);
     border-radius: 20px;
 }
 
 .chat {
     display: grid;
     padding: 5px;
-    max-width: 600px;
+    max-width: 700px;
     row-gap: 10px;
     margin: 200px auto;
 }
@@ -59,4 +59,8 @@ div{
     color: rgb(177, 177, 177);
     justify-self: end;
     align-self: end;
+}
+
+.icon{
+    height: 10px;
 }
